@@ -1,0 +1,17 @@
+/*! Custom font */
+
+@font-face {
+    font-family: 'custom-font-regular';
+    src: url('Poppins-Regular.woff2') format('woff2'),
+         url('Poppins-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'custom-font-bold';
+    src: url('Poppins-Bold.woff2') format('woff2'),
+         url('Poppins-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

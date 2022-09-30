@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  /* base html tags */
+}
+
+@layer components {
+
+  /* Font face for Poppins */
+  .custom-font-regular {
+    font-family: "custom-font-regular" !important;
+  }
+  .custom-font-bold {
+    font-family: "custom-font-bold" !important;
+  }
+
+  /* Font */
+  .font-heading {
+    @apply text-heading-font text-title-color font-semibold;
+  }
+
+  .font-default-heading {
+    @apply text-default-font text-title-color font-semibold;
+  }
+
+  .font-default {
+    @apply text-default-font text-default-color custom-font-regular;
+  }
+
+  .font-default-white {
+    @apply text-default-font text-white custom-font-regular;
+  }
+
+  .font-default-search {
+    @apply text-default-font text-search-color custom-font-regular;
+  }
+
+  .font-modal-title {
+    @apply text-modle-title-font text-title-color font-medium;
+  }
+
+  .font-modal-sub-title {
+    @apply text-modal-sub-title-font text-default-color font-medium;
+  }
+
+  .font-modal-title-confirm {
+    @apply text-modle-title-font text-confirm-color font-medium;
+  }
+
+  /* For Layout */
+  .default-margin-layout {
+    @apply w-11/12 md:w-11/12 h-auto mx-auto;
+  }
+
+  /* Navigation Background Color */
+  .bg-navigation {
+    background: #54BAB9;
+  }
+  
+  .nav-style {
+    @apply w-20 h-auto my-auto cursor-pointer;
+  }
+
+  /* Search Background Color */
+  .bg-search {
+    background: #f7ecde;
+  }
+
+  /*  Dropdown Item */
+  .dropdwon-button {
+    @apply font-default border-2 rounded-full px-4 py-1 text-center inline-flex items-center;
+  }
+  .dropdown-show {
+    @apply z-10 bg-white rounded-lg divide-x divide-gray-100 shadow dark:bg-gray-700;
+  }
+  .dropdown-item {
+    @apply block py-2 px-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;
+  }
+
+  /* Form Input */
+  .form-input {
+    @apply border-2 border-input-outline rounded-md font-default w-60 h-10;
+  }
+  .form-radio {
+    @apply w-4 h-4 text-title-color bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+  }
+
+  .form-search {
+    @apply focus:outline-none focus:border-sky-200 focus:ring-1 focus:ring-sky-200 rounded-full border-2 border-inherit px-5 py-1;
+  }
+
+  /* Button */
+  .delete-button {
+    @apply font-default bg-delete-color text-white active:bg-gray-400  px-16 py-2 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 rounded-md;
+  }
+
+  .cancel-button {
+    @apply font-default border-2 active:bg-gray-400  px-14 py-2 hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 rounded-md;
+  }
+
+  .more-button {
+    @apply flex border-b-2 p-3 space-x-4 cursor-pointer;
+  }
+
+  .add-button {
+    @apply font-default bg-title-color text-white active:bg-gray-400  px-16 py-2 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 rounded-md;
+  }
+
+  .update-button {
+    @apply font-default bg-update-color text-white active:bg-gray-400  px-16 py-2 shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 rounded-md;
+  }
+
+}
